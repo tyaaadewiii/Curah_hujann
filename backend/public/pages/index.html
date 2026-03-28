@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bali Rain Forecast</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-brand">
+      <div class="brand-icon">🌧️</div>
+      <div>
+        <div class="brand-title">Bali Rain Forecast</div>
+        <div class="brand-subtitle">SISTEM PREDIKSI CURAH HUJAN · PULAU BALI · 2026</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/">Dashboard</a>
+    <a href="/pages/edukasi.html">Edukasi</a>
+  </nav>
+
+  <!-- CONTROLS -->
+  <div class="controls-bar">
+    <div class="control-group">
+      <div class="control-label">Wilayah</div>
+      <select class="control-select" id="sel-wilayah"></select>
+    </div>
+
+    <div class="control-group">
+      <div class="control-label">Tahun Historis</div>
+      <select class="control-select" id="sel-tahun">
+        <option value="">Semua Tahun</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- KPI -->
+  <div class="kpi-grid">
+    <div class="kpi-card avg">
+      <div class="kpi-value"><span id="kpi-avg">-</span> mm</div>
+      <div class="kpi-label">Rata-rata</div>
+    </div>
+    <div class="kpi-card max">
+      <div class="kpi-value"><span id="kpi-max">-</span> mm</div>
+      <div class="kpi-label">Maksimum</div>
+    </div>
+    <div class="kpi-card min">
+      <div class="kpi-value"><span id="kpi-min">-</span> mm</div>
+      <div class="kpi-label">Minimum</div>
+    </div>
+  
+  </div>
+    <div class="panel">
+      <div class="panel-header">
+    <div class="panel-title">Insight Data</div>
+    </div>
+  <div style="padding:20px" id="insight-text">
+    Memuat insight...
+  </div>
+</div>
+  <!-- CHART -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-title">Grafik Curah Hujan Bulanan</div>
+    </div>
+    <div class="chart-area">
+      <div id="chart-loading">Loading...</div>
+      <canvas id="rain-chart"></canvas>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-title">Tabel Data Bulanan</div>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Bulan</th>
+            <th>Historis</th>
+            <th>Prediksi</th>
+            <th>Proporsi</th>
+            <th>Tipe</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <div class="nav-logo">Kontak Person</div>
+            <span class="nav-title">Prediksi<span>Hujan</span> Bali</span>
+          </div>
+          <p>Sistem prediksi curah hujan berbasis machine learning untuk mendukung perencanaan pertanian, kebencanaan, dan pembangunan berkelanjutan di Provinsi Bali.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sumber Data</h4>
+          <a href="https://www.bmkg.go.id" target="_blank">🌐 BMKG</a>
+          <a href="https://power.larc.nasa.gov" target="_blank">🛰 NASA POWER</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <a href="yayakanya02@email.com">✉ yayakanya02@email.com</a>
+          <a href="#">Universitas Pendidikan Nasional</a>
+          <a href="#">Fakultas Teknik dan Informatika</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dashboard Prediksi Curah Hujan Bali — Skripsi Penelitian</span>
+        <span>Visualisasi</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<div id="page-edukasi" class="page">
+  <div class="edu-wrap">
+ 
+    <div class="edu-hero">
+      <p class="dash-eyebrow">📚 Panduan Pemahaman</p>
+      <h1>Curah Hujan &amp;<br>Cara Membaca Grafik</h1>
+      <p>Pelajari dasar-dasar curah hujan, kategori intensitasnya, dan cara membaca visualisasi data pada dashboard ini.</p>
+    </div>
+ 
+    <!-- 1. Apa itu Curah Hujan -->
+    <div class="edu-section">
+      <h2><span class="icon">💧</span> Apa itu Curah Hujan?</h2>
+      <p>
+        <strong style="color:var(--white)">Curah hujan</strong> adalah jumlah air hujan yang jatuh ke permukaan bumi dalam satuan waktu tertentu, diukur dalam milimeter (mm). Satu milimeter curah hujan berarti 1 liter air jatuh per meter persegi permukaan tanah.
+      </p>
+      <br>
+      <p>
+        Di wilayah tropis seperti Bali, curah hujan sangat dipengaruhi oleh musim muson, topografi pegunungan, serta kedekatan dengan lautan. Pulau Bali memiliki dua musim utama: <strong style="color:var(--white)">musim hujan</strong> (Oktober–April) dan <strong style="color:var(--white)">musim kemarau</strong> (Mei–September).
+      </p>
+      <br>
+      <ul>
+        <li>Curah hujan diukur menggunakan alat bernama <em>rain gauge</em> atau ombrometer.</li>
+        <li>Data BMKG dikumpulkan dari ratusan stasiun pengamatan di seluruh Indonesia.</li>
+        <li>NASA POWER menyediakan data iklim berbasis satelit untuk melengkapi data observasi permukaan.</li>
+      </ul>
+    </div>
+ 
+    <!-- 2. Kategori -->
+    <div class="edu-section">
+      <h2><span class="icon">📊</span> Kategori Curah Hujan</h2>
+      <p>Berdasarkan Badan Meteorologi, Klimatologi, dan Geofisika (BMKG), curah hujan bulanan di Indonesia dibagi menjadi tiga kategori utama:</p>
+      <div class="cat-grid">
+        <div class="cat-card low">
+          <div class="cat-range">&lt; 100 mm</div>
+          <div class="cat-name">🟢 Rendah</div>
+          <div class="cat-desc">Curah hujan sangat sedikit. Biasanya terjadi pada puncak musim kemarau (Juni–Agustus). Berisiko kekeringan dan gagal panen pada lahan tadah hujan.</div>
+        </div>
+        <div class="cat-card med">
+          <div class="cat-range">100 – 300 mm</div>
+          <div class="cat-name">🟡 Sedang</div>
+          <div class="cat-desc">Curah hujan normal. Ideal untuk pertanian dan ketersediaan air. Umumnya terjadi pada masa transisi antara musim kemarau dan musim hujan.</div>
+        </div>
+        <div class="cat-card high">
+          <div class="cat-range">&gt; 300 mm</div>
+          <div class="cat-name">🔴 Tinggi</div>
+          <div class="cat-desc">Curah hujan sangat lebat. Sering terjadi pada puncak musim hujan (Desember–Februari). Berpotensi menimbulkan banjir dan tanah longsor.</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 3. Cara Membaca Grafik -->
+    <div class="edu-section">
+      <h2><span class="icon">📈</span> Cara Membaca Grafik</h2>
+      <p>Grafik pada halaman Dashboard menampilkan dua jenis garis data dalam satu tampilan. Berikut panduan membacanya:</p>
+      <div class="guide-box">
+        <div class="guide-item">
+          <div class="guide-num">1</div>
+          <div class="guide-text">
+            <strong>Sumbu X — Waktu (Bulan)</strong>
+            <p>Sumbu horizontal menampilkan nama bulan dari Januari hingga Desember. Setiap titik pada grafik mewakili nilai rata-rata curah hujan bulanan.</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-num">2</div>
+          <div class="guide-text">
+            <strong>Sumbu Y — Curah Hujan (mm/bulan)</strong>
+            <p>Sumbu vertikal menunjukkan besaran curah hujan dalam satuan milimeter per bulan. Nilai lebih tinggi berarti curah hujan lebih banyak.</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-num">3</div>
+          <div class="guide-text">
+            <strong>Garis Biru — Data Historis</strong>
+            <p>Garis berwarna <strong style="color:#38b6d8">biru</strong> merepresentasikan data curah hujan aktual yang terukur di stasiun BMKG. Data ini adalah fakta yang sudah terjadi.</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-num">4</div>
+          <div class="guide-text">
+            <strong>Garis Merah — Data Prediksi</strong>
+            <p>Garis berwarna <strong style="color:#e5484d">merah</strong> merupakan hasil estimasi model machine learning berdasarkan pola historis dan variabel iklim dari NASA POWER. Selisih antara dua garis ini mencerminkan akurasi model.</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-num">5</div>
+          <div class="guide-text">
+            <strong>Tooltip Interaktif</strong>
+            <p>Arahkan kursor ke titik manapun pada grafik untuk melihat nilai pasti curah hujan historis dan prediksi pada bulan tersebut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div><!-- /page-edukasi -->
